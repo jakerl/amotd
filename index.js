@@ -15,7 +15,7 @@ function getTodaysManifesto() {
         "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly."
     ]
     
-    const todaysIndex = Math.floor(new Math.seedrandom(new Date().toDateString())() * strings.length);
+    const todaysIndex = Math.floor(new Math.seedrandom(new Date().toDateString())() * agileManifestos.length);
     return agileManifestos[todaysIndex]; 
 }
 

@@ -14,7 +14,11 @@ const agileManifestos = [
     "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly."
 ];
 
-const todaysIndex = Math.floor(new Math.seedrandom(new Date().toDateString())() * agileManifestos.length);
+const today = new Date();
+const seed = today.toISOString().slice(0, 10);
+const random = new Math.seedrandom(seed);
+const todaysIndex = Math.floor(random() * agileManifestos.length);
+
 const manifestoElement = document.createElement("h2");
 
 manifestoElement.innerText = agileManifestos[todaysIndex];

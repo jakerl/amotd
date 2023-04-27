@@ -30,8 +30,6 @@ const agileManifestos = [
     "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
     "Business people and developers must work together daily throughout the project.",
     "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
-    "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.",
-    "Working software is the primary measure of progress.",
 ];
 
 const today = new Date();
@@ -39,4 +37,4 @@ const todayAsIndex = today.getDate();
 
 const manifestoElement = document.getElementsByClassName("manifesto")[0];
 
-manifestoElement.innerText = agileManifestos[todayAsIndex];
+manifestoElement.innerText = agileManifestos[todayAsIndex - 1];

@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+
+body {
+    background-color: #282a36;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.title {
-
-}
-
-.manifesto {
-}
+h1 {
+    color: #f8f8f2;
+    font-family: Comfortaa;
+    font-weight: 700;
+ }
+ 
+ h2 {
+    color: #6272a4;
+    font-family: Comfortaa;
+    font-weight: 300;
+ }

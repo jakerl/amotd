@@ -1,17 +1,16 @@
 body {
     display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    justify-self: center;
-    align-self: center;
     background-color: magenta;
 }
 
 .title {
-    background-color: aqua;
+
 }
 
 .manifesto {
-    background-color: brown;
 }

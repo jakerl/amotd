@@ -37,8 +37,6 @@ const agileManifestos = [
 const today = new Date();
 const todayAsIndex = today.getDate();
 
-const manifestoElement = document.createElement("h2");
+const manifestoElement = document.getElementsByClassName("manifesto")[0];
 
 manifestoElement.innerText = agileManifestos[todayAsIndex];
-
-document.body.appendChild(manifestoElement);

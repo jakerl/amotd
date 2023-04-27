@@ -1,0 +1,17 @@
+body {
+    display: grid;
+}
+
+.container {
+    justify-self: center;
+    align-self: center;
+    background-color: magenta;
+}
+
+.title {
+    background-color: aqua;
+}
+
+.manifesto {
+    background-color: brown;
+}

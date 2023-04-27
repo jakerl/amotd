@@ -23,4 +23,4 @@ const manifestoElement = document.createElement("h2");
 
 manifestoElement.innerText = agileManifestos[todaysIndex];
 
-document.body.append(getElementForManifesto(getTodaysManifesto()));
+document.body.append(manifestoElement);

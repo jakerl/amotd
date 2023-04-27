@@ -13,10 +13,22 @@ function getTodaysManifesto() {
         "Simplicity--the art of maximizing the amount of work not done--is essential.",
         "The best architectures, requirements, and designs emerge from self-organizing teams.",
         "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly."
-    ]
+    ];
     
     const todaysIndex = Math.floor(new Math.seedrandom(new Date().toDateString())() * agileManifestos.length);
+    
+    appendTextToBody(todaysIndex);
+    appendTextToBody(agileManifestos[todaysIndex]);
+    
     return agileManifestos[todaysIndex]; 
+}
+
+function appendTextToBody(text) {
+        const element = document.createElement("h2");
+        
+        element.innerText = text;
+    
+        document.body.appendChild(element);   
 }
 
 function getElementForManifesto(manifesto) {

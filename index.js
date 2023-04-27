@@ -35,6 +35,6 @@ const agileManifestos = [
 const today = new Date();
 const todayAsIndex = today.getDate();
 
-const manifestoElement = document.getElementsByClassName("manifesto")[0];
+const manifestoElement = document.getElementById("manifesto");
 
 manifestoElement.innerText = agileManifestos[todayAsIndex - 1];

@@ -1,5 +1,4 @@
-function getTodaysManifesto() {
-    const agileManifestos = [
+const agileManifestos = [
         "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.",
         "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.",
         "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
@@ -13,30 +12,11 @@ function getTodaysManifesto() {
         "Simplicity--the art of maximizing the amount of work not done--is essential.",
         "The best architectures, requirements, and designs emerge from self-organizing teams.",
         "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly."
-    ];
-    
-    const todaysIndex = Math.floor(new Math.seedrandom(new Date().toDateString())() * agileManifestos.length);
-    
-    appendTextToBody(todaysIndex);
-    appendTextToBody(agileManifestos[todaysIndex]);
-    
-    return agileManifestos[todaysIndex]; 
-}
+];
 
-function appendTextToBody(text) {
-        const element = document.createElement("h2");
-        
-        element.innerText = text;
-    
-        document.body.appendChild(element);   
-}
+const todaysIndex = Math.floor(new Math.seedrandom(new Date().toDateString())() * agileManifestos.length);
+const manifestoElement = document.createElement("h2");
 
-function getElementForManifesto(manifesto) {
-    const manifestoElement = document.createElement("h2");
-    
-    manifestoElement.innerText = manifesto;
-
-    return manifestoElement
-}
+manifestoElement.innerText = agileManifestos[todaysIndex];
 
 document.body.append(getElementForManifesto(getTodaysManifesto()));
